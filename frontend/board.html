@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미소 병원 - 진료 문의</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="board-container">
+        <header>
+            <h2>진료 문의 게시판</h2>
+            <span class="user-info" id="userInfo"></span>
+            <a href="admin.html" id="adminLink" class="btn-primary" style="display:none; width:auto; text-decoration:none; padding:8px 16px; margin-top:10px;">문서 스캔 페이지로 이동</a>
+        </header>
+
+        <section class="write-section">
+            <h3>증상 남기기</h3>
+            <form id="inquiryForm">
+                <div class="input-group">
+                    <label for="title">제목</label>
+                    <input type="text" id="title" placeholder="어디가 불편하신가요?">
+                </div>
+                <div class="input-group">
+                    <label for="content">상세 증상</label>
+                    <textarea id="content" rows="4" placeholder="증상을 상세히 적어주세요."></textarea>
+                </div>
+                <button type="submit" class="btn-primary">문의 등록</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h3>나의 문의 내역</h3>
+            <ul id="inquiryList"></ul>
+        </section>
+    </div>
+
+    <script src="js/was-config.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/board.js"></script>
+</body>
+</html>
